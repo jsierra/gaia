@@ -1,0 +1,155 @@
+/**
+ * HEADER.CSS
+ * Consistent styles for using in the working week Barcelona 25/30 June 2012
+ * ------------------------------------------------------*/
+
+[role="toolbar"] {
+	position: relative;
+	z-index: 10;
+	height: 5rem;
+	color: #fff;
+	background: #cd6623 url(images/ui/header.png) repeat-x left bottom;
+	/*background-image: -moz-linear-gradient(top, #cd6723, #bb492d);*/
+	/*box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.25), 0 2px 4px -4px rgba(0, 0, 0, 0.99);*/
+}
+	/* Box shadow with images */
+	[role="toolbar"]:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		background: url(images/ui/shadow-header.png) repeat-x left top;
+		top: 100%;
+		height: 0.5rem;
+	}
+	[role="toolbar"] h1 {
+		font: 2.2rem/4.8rem System Sans, Sans-serif;
+		text-align: left;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		display: block;
+		overflow: hidden;
+		margin: 0 0 0 3rem;
+		height: 100%
+	}
+		[role="toolbar"] h1 sup {
+			background: url(images/icons/fav-star.png) no-repeat center center;
+			background-size: 100% auto;
+			width: 1.2rem;
+			height: 1.2rem;
+			display: inline-block;
+			vertical-align: text-top;
+			text-indent: 100%;
+			overflow: hidden;
+		}
+		[role="toolbar"] h1 em { font: 1.5rem/1em System Sans Bold, Sans-serif; }
+
+	[role="toolbar"] form {
+		display: block;
+		overflow: hidden;
+		padding: 1.1rem;
+		margin-left: 2.5rem;
+	}
+		[role="toolbar"] label { position: relative; display: block; }
+			[role="toolbar"] [role="textbox"] {
+				width: 100%;
+				height: 2.7rem;
+				-moz-box-sizing: border-box;
+				padding: 0 0.5rem;
+				border: solid 1px #9d4123;
+				border-top-color: #a6501e;
+				border-radius: 0.3rem;
+				background: #fff url(images/ui/shadow-header.png) repeat-x left -1px;
+				/*box-shadow: inset 0 2px 1px -1px rgba(0, 0, 0, 0.3);*/
+				font: 1.35rem/1em System Sans, Sans-serif;
+			}
+			[role="toolbar"] form .clear {
+				text-indent: 100%;
+				overflow: hidden;
+				position: absolute;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				width: 3rem;
+				background: url(images/icons/clear.png) no-repeat center center;
+			}
+
+
+	/* Negative action (back, cancel, etc) */
+	[role="toolbar"] .negative {
+		position: absolute;
+		left: 0;
+		width: 4rem;
+		height: 4.9rem;
+		/*background: -moz-linear-gradient(bottom, #803220, #b5521f);*/
+		background: url(images/ui/separator-large.png) no-repeat 2rem center;
+		overflow: visible;
+	}
+		[role="toolbar"] .negative [data-icon] {
+			  overflow: visible;
+			  text-indent: -9999px;
+			  position: static;
+			  margin-left: -3rem;
+		}
+			[role="toolbar"] .negative [data-icon]:after {
+				  content: "";
+				  position: absolute;
+				  left: 0;
+				  top: 0;
+				  z-index: -1;
+				  width: 2rem;
+				  height: 5rem;
+				  background: #9d3d26 url(images/ui/negative.png) repeat-x left top;
+			}
+		[role="toolbar"] .negative [data-icon="menu"] { background-position: -0.6rem center; }
+
+
+
+	/* Generic set of actions in toolbar */
+	[role="toolbar"] [role="menu"] { height: 100%; float: right; }
+	[role="toolbar"] [role="menuitem"] { height: 100%; float: left; }
+		[role="toolbar"] [role="menuitem"]:first-child { background: none; padding: 0 1.75rem; }
+		[role="toolbar"] [role="menuitem"], [role="toolbar"] [role="menuitem"]:last-child {
+			background: url(images/ui/separator.png) no-repeat left center;
+			padding: 0 1.75rem;
+		}
+
+	[role="toolbar"] menu { padding: 0; margin: 0; }	
+		[role="toolbar"] button {
+			border: none;
+			background: none;
+			padding: 0;
+			overflow: hidden;
+			font: 1.4rem/1.1em System Sans Semibold, Sans-serif;	
+			color: #fff;
+		}
+			[role="toolbar"] button:first-letter { text-transform: uppercase; } 
+
+			/* Icon definitions */
+			[role="toolbar"] [data-icon] {
+				display: inline-block;
+				width: 3rem;
+				height: 3rem;
+				margin: 0 -1rem;
+				background: transparent no-repeat center center;
+				background-size: 100% auto;
+				text-indent: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+			[role="toolbar"] [data-icon="add"] { background-image: url(images/icons/add.png); }
+			[role="toolbar"] [data-icon="edit"] { background-image: url(images/icons/edit.png); }
+			[role="toolbar"] [data-icon="close"] { background-image: url(images/icons/close.png); }
+			[role="toolbar"] [data-icon="back"] { background-image: url(images/icons/back.png); }
+			[role="toolbar"] [data-icon="menu"] { background-image: url(images/icons/menu.png); }
+			[role="toolbar"] [data-icon="user"] { background-image: url(images/icons/user.png); }
+		
+
+
+
+
+
+
+
+
+

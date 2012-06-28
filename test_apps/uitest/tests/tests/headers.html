@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Default headers</title>
+		<link rel="stylesheet" type="text/css" href="style/base.css">
+		
+		<!-- 
+			This <style> is only used for the demostration of the toolbars, is no needed for the real case use
+		-->
+		<style type="text/css">
+			[role="toolbar"] { margin-bottom: 2rem; }
+		</style>
+
+		<!-- 
+			This <style> is an ausmption that you have loaded the fonts and some basic styles, so this is only for getting work correctly 
+			the following examples
+		-->
+		<style type="text/css">
+			html, body { margin: 0; padding: 0; font-size: 10px; }
+			@font-face {
+			  font-family: 'System Sans';
+			  font-style: normal;
+			  font-weight: normal;
+			  src: local('Open Sans'), local('OpenSans'), url('style/fonts/opensans-regular-webfont.woff') format('woff');
+			}
+
+			@font-face {
+			  font-family: 'System Sans Light';
+			  font-style: normal;
+			  font-weight: normal;
+			  src: local('Open Sans Light'), local('OpenSans-light'), url('style/fonts/opensans-light-webfont.woff') format('woff');
+			}
+
+			@font-face {
+			  font-family: 'System Sans Semibold';
+			  font-style: normal;
+			  font-weight: normal;
+			  src: local('Open Sans Semibold'), local('OpenSans-semibold'), url('style/fonts/opensans-semibold-webfont.woff') format('woff');
+			}
+
+			@font-face {
+			  font-family: 'System Sans Bold';
+			  font-style: normal;
+			  font-weight: normal;
+			  src: local('Open Sans Bold'), local('OpenSans-bold'), url('style/fonts/opensans-bold-webfont.woff') format('woff');
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header role="toolbar">
+			<menu role="menu">
+				<button role="menuitem"><span data-icon="edit">edit</span></button>
+				<button role="menuitem"><span data-icon="add">add</span></button>
+			</menu>
+			<h1>Messages</h1>
+		</header>
+		<!--code>
+			&lt;header role="toolbar"&gt;
+				&lt;menu role="menu"&gt;
+					&lt;button role="menuitem"&gt;&lt;span data-icon="edit"&gt;edit&lt;/span&gt;&lt;/button&gt;
+					&lt;button role="menuitem"&gt;&lt;span data-icon="add"&gt;add&lt;/span&gt;&lt;/button&gt;
+				&lt;/menu&gt;
+				&lt;h1&gt;Messages&lt;/h1&gt;
+			&lt;/header&gt;
+		</code-->
+
+		<header role="toolbar">
+			<button class="negative"><span data-icon="back">back</span></button>
+			<menu role="menu">
+				<button role="menuitem"><span data-icon="edit">edit</span></button>
+			</menu>
+			<h1>Mark Alfenito <sup>favourite</sup></h1>
+		</header>
+
+		<header role="toolbar">
+			<button class="negative"><span data-icon="menu">menu</span></button>
+			<menu role="menu">
+				<button role="menuitem"><span data-icon="edit">edit</span></button>
+				<button role="menuitem"><span data-icon="add">add</span></button>
+			</menu>
+			<h1>Inbox <em>(2)</em></h1>
+		</header>
+
+		<header role="toolbar">
+			<button class="negative"><span data-icon="close">close</span></button>
+			<menu role="menu">
+				<button role="menuitem">done</button>
+			</menu>
+			<h1>Title</h1>
+		</header>
+
+		<header role="toolbar">
+			<button class="negative"><span data-icon="back">back</span></button>
+			<menu role="menu">
+				<button role="menuitem"><span data-icon="user">user</span></button>
+			</menu>
+			<form action="#">
+				<label>
+					<input type="text" role="textbox">
+					<button class="clear">clear</button>
+				</label>
+			</form>
+		</header>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Media headers</title>
+		<link rel="stylesheet" type="text/css" href="style/base.css">
+		<link rel="stylesheet" type="text/css" href="style/dark.css">
+		
+		<!-- 
+			This <style> is only used for the demostration of the toolbars, is no needed for the real case use
+		-->
+		<style type="text/css">
+			[role="toolbar"] { margin-bottom: 2rem; }
+			[role="toolbar"] + hgroup { margin: -2rem 0 2rem; }
+		</style>
+
+		<!-- 
+			This <style> is an ausmption that you have loaded the fonts and some basic styles, so this is only for getting work correctly 
+			the following examples
+		-->
+		<style type="text/css">
+			html, body { margin: 0; padding: 0; font-size: 10px; }
+			@font-face {
+			  font-family: 'System Sans';
+			  font-style: normal;
+			  font-weight: normal;
+			  src: local('Open Sans'), local('OpenSans'), url('style/fonts/opensans-regular-webfont.woff') format('woff');
+			}
+
+			@font-face {
+			  font-family: 'System Sans Light';
+			  font-style: normal;
+			  font-weight: normal;
+			  src: local('Open Sans Light'), local('OpenSans-light'), url('style/fonts/opensans-light-webfont.woff') format('woff');
+			}
+
+			@font-face {
+			  font-family: 'System Sans Semibold';
+			  font-style: normal;
+			  font-weight: normal;
+			  src: local('Open Sans Semibold'), local('OpenSans-semibold'), url('style/fonts/opensans-semibold-webfont.woff') format('woff');
+			}
+
+			@font-face {
+			  font-family: 'System Sans Bold';
+			  font-style: normal;
+			  font-weight: normal;
+			  src: local('Open Sans Bold'), local('OpenSans-bold'), url('style/fonts/opensans-bold-webfont.woff') format('woff');
+			}
+		</style>
+	</head>
+
+	<body style="background: #000; padding-top: 1rem;">
+		<header role="toolbar">
+			<button class="negative"><span data-icon="back">back</span></button>
+			<h1>Song title</h1>
+		</header>
+		<hgroup>
+			<h2>Artist name</h2>
+			<h3>Album name</h3>
+		</hgroup>
+
+		<header role="toolbar" data-type="media">
+			<h1>Song title</h1>
+		</header>
+
+	</body>
+</html>
